@@ -1,0 +1,82 @@
+body {
+  background: #050805 url(img/bg.png);
+  color: #c8ffc8;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+}
+a { color: #00ffff; }
+a:visited { color: #ff66ff; }
+a:hover { color: #ffff00; background: #300; }
+h1, h2, h3 { font-family: "Courier New", Courier, monospace; color: #ff3030; margin: 0 0 8px; }
+h1 { font-size: 30px; text-align: center; text-shadow: 2px 2px #400; }
+h2 { font-size: 20px; border-bottom: 1px dashed #ff3030; }
+h3 { font-size: 16px; color: #ffff00; }
+img { border: 0; }
+.pix { image-rendering: pixelated; image-rendering: crisp-edges; }
+
+#wrap { width: 760px; max-width: 100%; margin: 0 auto; }
+table.layout { width: 100%; border-collapse: separate; border-spacing: 6px; }
+table.layout > tbody > tr > td { vertical-align: top; }
+
+.box {
+  background: #0c120c;
+  border: 3px outset #3a5a3a;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+}
+.box.red { border-color: #7a2020; background: #140808; }
+.box.yel { border-color: #8a7a10; background: #14120a; }
+
+#top { text-align: center; }
+#top img.banner { width: 256px; height: 128px; }
+#ticker {
+  background: #000; color: #ff3030; border: 2px inset #555;
+  font-family: "Courier New", monospace; font-weight: bold; padding: 2px;
+}
+#nav { width: 150px; }
+#nav a { display: block; padding: 3px 6px; margin-bottom: 4px; text-decoration: none;
+  font-family: "Courier New", monospace; font-weight: bold; background: #1a2a1a;
+  border: 2px outset #4a6a4a; color: #7dff7d; }
+#nav a:hover { background: #3a0a0a; color: #ff6; }
+#nav a.cur { background: #3a0a0a; color: #ff6; border-style: inset; }
+#nav .small { font-size: 12px; text-align: center; color: #8a8; }
+
+.blink { animation: blink 1s steps(2, start) infinite; color: #ff0; font-weight: bold; }
+@keyframes blink { to { visibility: hidden; } }
+
+.redact { background: #000; color: #000; padding: 0 2px; user-select: none; }
+.redact:hover { color: #000; }
+
+table.data { border-collapse: collapse; width: 100%; }
+table.data th, table.data td { border: 1px solid #3a5a3a; padding: 4px 8px; text-align: left; }
+table.data th { background: #1a2a1a; color: #ffff00; font-family: "Courier New", monospace; }
+
+.news { margin-bottom: 10px; }
+.news .date { font-family: "Courier New", monospace; color: #ffa500; }
+
+.shots { width: 100%; border-collapse: separate; border-spacing: 8px; }
+.shots td { text-align: center; vertical-align: top; background: #0c120c; border: 3px inset #3a5a3a; padding: 6px; width: 50%; }
+.shots img { max-width: 100%; height: auto; border: 2px solid #000; }
+.shots .cap { font-family: "Courier New", monospace; font-size: 13px; color: #ffa500; }
+
+.dl { display: block; text-align: center; padding: 8px; margin: 6px 0; font-family: "Courier New", monospace;
+  font-weight: bold; font-size: 18px; background: #2a0a0a; border: 3px outset #aa3030; color: #fff !important;
+  text-decoration: none; }
+.dl small { display: block; font-weight: normal; font-size: 12px; color: #fbb; }
+.dl:hover { background: #4a1010; }
+
+pre, code { font-family: "Courier New", monospace; background: #000; color: #7dff7d; }
+pre { padding: 6px; border: 1px solid #3a5a3a; overflow-x: auto; }
+
+#footer { text-align: center; font-size: 12px; color: #8a8; padding: 6px; }
+#footer img { vertical-align: middle; margin: 2px; }
+.counter { text-align: center; font-size: 12px; }
+
+@media (max-width: 600px) {
+  table.layout, table.layout > tbody, table.layout > tbody > tr, table.layout > tbody > tr > td { display: block; width: auto; }
+  #nav { width: auto; }
+  #nav a { display: inline-block; }
+  .shots, .shots tbody, .shots tr, .shots td { display: block; width: auto; margin-bottom: 8px; }
+}

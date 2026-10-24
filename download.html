@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download - SCP: Containment Breach 3DS</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/icon.png">
+</head>
+<body>
+<div id="wrap">
+
+<div class="box" id="top">
+  <h1>DOWNLOAD</h1>
+  <div>Pick the build for your console</div>
+</div>
+
+<table class="layout"><tr>
+<td id="nav">
+  <div class="box">
+    <a href="index.html">&gt; Home</a>
+    <a href="screenshots.html">&gt; Screenshots</a>
+    <a class="cur" href="download.html">&gt; Download</a>
+    <a href="https://github.com/serqay/3dsScpSite/issues">&gt; Contact</a>
+  </div>
+</td>
+
+<td>
+  <div class="box red">
+    <img src="img/stamp.png" alt="Level 2 clearance" width="190" height="48" style="float:right">
+    <h2>Step 1: get the game</h2>
+    <p>Every file is hosted on GitHub Releases. Each build is about 280 MB.</p>
+    <h3>Old Nintendo 3DS / 3DS XL / 2DS</h3>
+    <a class="dl" href="https://github.com/serqay/3dsScpSite/releases/latest/download/scpcb3ds_old.3dsx">scpcb3ds_old.3dsx<small>Homebrew Launcher</small></a>
+    <a class="dl" href="https://github.com/serqay/3dsScpSite/releases/latest/download/scpcb3ds_old.cia">scpcb3ds_old.cia<small>Installable with FBI</small></a>
+    <h3>New Nintendo 3DS / New 3DS XL / New 2DS XL</h3>
+    <a class="dl" href="https://github.com/serqay/3dsScpSite/releases/latest/download/scpcb3ds_new.3dsx">scpcb3ds_new.3dsx<small>Homebrew Launcher</small></a>
+    <a class="dl" href="https://github.com/serqay/3dsScpSite/releases/latest/download/scpcb3ds_new.cia">scpcb3ds_new.cia<small>Installable with FBI</small></a>
+    <p>All versions: <a href="https://github.com/serqay/3dsScpSite/releases">GitHub Releases</a>.
+    The Old 3DS build always uses the low profile (shorter view distance, cheaper animation).
+    The New 3DS build has sharper textures and stereoscopic 3D.</p>
+  </div>
+
+  <div class="box">
+    <h2>Step 2: install</h2>
+    <ol>
+      <li>Your console needs custom firmware and the Homebrew Launcher.</li>
+      <li><b>.3dsx:</b> copy the file to <code>sdmc:/3ds/</code> on the SD card and start it from the Homebrew Launcher.<br>
+          <b>.cia:</b> copy it anywhere on the SD card and install it with FBI.</li>
+      <li><b>Sound:</b> dump your console's DSP firmware (the "DSP1" homebrew) so that
+          <code>sdmc:/3ds/dspfirm.cdc</code> exists. Without it the game runs silently.</li>
+      <li>Keep at least 300 MB free on the SD card.</li>
+    </ol>
+  </div>
+
+  <div class="box yel">
+    <h2>Requirements</h2>
+    <table class="data">
+      <tr><th>Console</th><th>Build</th><th>Notes</th></tr>
+      <tr><td>Old 3DS / XL / 2DS</td><td>old</td><td>Low profile, about 20-30 fps in heavy rooms</td></tr>
+      <tr><td>New 3DS / XL / 2DS XL</td><td>new</td><td>Sharper textures, stereo 3D</td></tr>
+    </table>
+    <p>Language (English / Russian) is chosen in Options &rarr; Language, in the main menu. The first start follows the console language.</p>
+  </div>
+
+  <div class="box">
+    <h2>FAQ</h2>
+    <h3>Does it work in an emulator?</h3>
+    <p>Yes, it runs in Azahar (the Citra successor). Use the .3dsx build that matches the console model you choose.</p>
+    <h3>Is it finished?</h3>
+    <p>It is a demo: you can play through the facility and reach the endings, but expect bugs.</p>
+    <h3>I found a bug!</h3>
+    <p>Tell me on the <a href="https://github.com/serqay/3dsScpSite/issues">issues page</a>. Say which console and which room.</p>
+    <p style="text-align:center"><img src="img/construction.gif" alt="Under construction" width="120" height="42"></p>
+  </div>
+
+  <div class="box red">
+    <h2>Licence</h2>
+    <p>Unofficial fan project, not affiliated with the SCP: Containment Breach authors or Nintendo.
+    SCP: Containment Breach and the SCP Foundation are
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (<a href="https://scp-wiki.net">scp-wiki.net</a>).</p>
+  </div>
+</td>
+</tr></table>
+
+<img src="img/divider.gif" alt="" width="480" height="8" style="display:block;margin:6px auto;max-width:100%">
+<div id="footer">
+  <img src="img/btn_scp.png" alt="SCP Foundation" width="88" height="31">
+  <img src="img/btn_3ds.png" alt="Nintendo 3DS" width="88" height="31">
+  <img src="img/btn_devkit.png" alt="Made with devkitPro" width="88" height="31">
+  <p>&copy; 2026 serqay &middot; fan project</p>
+</div>
+
+</div>
+</body>
+</html>
